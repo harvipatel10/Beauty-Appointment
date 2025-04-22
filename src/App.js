@@ -48,11 +48,6 @@ import BeautyGallery from "./Componants/BeautyGallery/BeautyGallery";
 import BeautyPricing from "./Componants/BeautyPricing/BeautyPricing"
 import BeautyContact from "./Componants/BeautyContact/BeautyContact";
 
-////////////////////////////////////////////////////////////////////////////////////////
-
-import AdminLayout from './Componants/AdminLayout/AdminLayout';
-import TelentLayout from "./Componants/TelentLayout/TelentLayout";
-import UserLayout from "./Componants/UserLayout/UserLayout";
 
 
 
@@ -117,9 +112,7 @@ function App() {
 
        
       
-       <Route path="/AdminLayout" element={<AdminLayout />} />
-       <Route path="/TelentLayout" element={<TelentLayout />} />
-       <Route path="/UserLayout" element={<UserLayout />} />
+      
 
        
   

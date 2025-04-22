@@ -28,7 +28,7 @@ const Login = () => {
     // Allow login if both fields are filled (without checking specific values)
     if (email && password) {
       alert("Login successful!");
-      navigate("/home"); // Redirect to home page after successful login
+      navigate("/BeautySpaHome");
     } else {
       alert("Please enter both email and password.");
     }
