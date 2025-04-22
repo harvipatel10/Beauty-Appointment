@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Login/Login.css";
 
 const Login = () => {
@@ -25,10 +25,12 @@ const Login = () => {
 
     const { email, password } = formData;
 
-    if (email === "user123@gmail.com" && password === "password123") {
+    // Allow login with any email and password (both should not be empty)
+    if (email !== "" && password !== "") {
       alert("Login successful!");
+      navigate("/home"); // Redirect to the home page after successful login
     } else {
-      alert("Invalid email or password. Please try again.");
+      alert("Please enter both email and password.");
     }
   };
 
@@ -37,14 +39,9 @@ const Login = () => {
       {/* Welcome Section */}
       <div className="welcome-section">
         <h1 className="welcome-text">
-          <span>W</span>
-          <span>E</span>
-          <span>L</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-          <span>E</span>
-          <span>!</span>
+          {"WELCOME!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
         </h1>
         <p>
           Welcome to our Appointment Management System. Please log in to
@@ -76,8 +73,6 @@ const Login = () => {
             <button type="submit">Login</button>
           </form>
           <div className="links">
-            {/* Use the correct route path here */}
-            <Link to="/forgot-password">Forgot Password?</Link>
             <p className="message">
               Don't have an account?{" "}
               <button onClick={() => navigate("/signup")}>Go to Sign Up</button>
@@ -89,27 +84,9 @@ const Login = () => {
       {/* Thank You Message */}
       <div className="thank-you-message">
         <h1 className="thank-you-text">
-          <span>T</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
-          <span>K</span>
-          <span> </span>
-          <span>Y</span>
-          <span>O</span>
-          <span>U</span>
-          <span> </span>
-          <span>F</span>
-          <span>O</span>
-          <span>R</span>
-          <span> </span>
-          <span>L</span>
-          <span>O</span>
-          <span>G</span>
-          <span>G</span>
-          <span>I</span>
-          <span>N</span>
-          <span>!</span>
+          {"THANK YOU FOR LOGIN!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
         </h1>
       </div>
     </>
