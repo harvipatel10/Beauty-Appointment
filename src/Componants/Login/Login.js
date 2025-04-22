@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Login/Login.css";
 
 const Login = () => {
@@ -76,8 +76,6 @@ const Login = () => {
             <button type="submit">Login</button>
           </form>
           <div className="links">
-            {/* Use the correct route path here */}
-            <Link to="/forgot-password">Forgot Password?</Link>
             <p className="message">
               Don't have an account?{" "}
               <button onClick={() => navigate("/signup")}>Go to Sign Up</button>
