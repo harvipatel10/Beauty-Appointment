@@ -11,12 +11,20 @@ const Login = () => {
     password: "",
   });
 
+  // Toggle password visibility
+  const [showPassword, setShowPassword] = useState(false);
+
   // Handle input change
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  // Handle password visibility toggle
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   // Handle form submission
@@ -32,6 +40,12 @@ const Login = () => {
     } else {
       alert("Please enter both email and password.");
     }
+
+    // Reset the form after login attempt
+    setFormData({
+      email: "",
+      password: "",
+    });
   };
 
   return (
@@ -62,14 +76,23 @@ const Login = () => {
               onChange={handleChange}
               required
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
+            <div className="password-container">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+              />
+              <button
+                type="button"
+                className="show-password-btn"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? "Hide" : "Show"}
+              </button>
+            </div>
             <button type="submit">Login</button>
           </form>
           <div className="links">
@@ -79,15 +102,6 @@ const Login = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Thank You Message */}
-      <div className="thank-you-message">
-        <h1 className="thank-you-text">
-          {"THANK YOU FOR LOGIN!".split("").map((char, i) => (
-            <span key={i}>{char}</span>
-          ))}
-        </h1>
       </div>
     </>
   );
