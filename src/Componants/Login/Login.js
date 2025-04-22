@@ -25,7 +25,7 @@ const Login = () => {
 
     const { email, password } = formData;
 
-    if (email === "user123@gmail.com" && password === "password123") {
+    if (email === "" && password === "") {
       alert("Login successful!");
     } else {
       alert("Invalid email or password. Please try again.");
