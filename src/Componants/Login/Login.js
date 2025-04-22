@@ -4,6 +4,7 @@ import "../Login/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   // State for form fields
   const [formData, setFormData] = useState({
@@ -11,8 +12,11 @@ const Login = () => {
     password: "",
   });
 
-  // Toggle password visibility
-  const [showPassword, setShowPassword] = useState(false);
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+};
+
+
 
   // Handle input change
   const handleChange = (e) => {
@@ -81,6 +85,9 @@ const Login = () => {
                 onChange={handleChange}
                 required
               />
+              <span className="password-toggle" onClick={togglePassword}>
+                                {showPassword ? '👁️' : '🙈'}
+                            </span>
            
             </div>
             <button type="submit">Login</button>
