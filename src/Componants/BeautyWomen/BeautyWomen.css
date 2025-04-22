@@ -1,0 +1,128 @@
+/* Main Container */
+
+.beauty-services-container{
+  background: linear-gradient(135deg, #0a1f44, #142850);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 50px;
+  margin-top: -170px;
+}
+
+/* Hero Section */
+
+.women-hero-section{
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.women-hero-heading{
+  text-align: center;
+  margin-top: -40px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 20px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  display: inline-block;
+}
+
+/* Services Grid */
+
+.beauty-services-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Service Box */
+
+.beauty-service-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  
+}
+
+
+.beauty-service-box:hover{
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Service Images */
+
+.beauty-service-image{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Service Titles */
+
+.beauty-service-title{
+  font-size: 20px;
+  margin: 18px 0;
+  color: #ffcc00;
+  font-weight: 700;
+}
+
+/* More Button */
+
+.beauty-more-btn {
+  background: linear-gradient(135deg, #ffcc00, #ff8800);
+  color: #0a1f44;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.beauty-more-btn:hover{
+  background: linear-gradient(135deg, #ff8800, #ff5500);
+  transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .women-hero-heading{
+      font-size: 24px;
+      padding: 10px;
+  }
+
+
+  .beauty-services-grid{
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .beauty-service-title{
+      font-size: 18px;
+  }
+
+
+  .beauty-more-btn{
+      font-size: 14px;
+      padding: 10px 16px;
+  }
+}

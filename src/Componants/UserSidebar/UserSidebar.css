@@ -1,0 +1,48 @@
+/* Base sidebar style */
+.sidebar {
+    width: 250px;
+    background-color: #1f2937;
+    color: white;
+    position: fixed;
+    top: 80px; /* Assuming navbar height is 80px */
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    transform: translateX(0); /* Visible by default on large screens */
+    margin-top: 55px;
+  }
+  
+  /* Hide sidebar on small screens by default */
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      margin-top: 110px;
+    }
+  
+    .sidebar.open {
+      transform: translateX(0); /* Show when 'open' class is added */
+    }
+  }
+  
+  /* Sidebar list styles */
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+  }
+  
+  .sidebar-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sidebar-list li:hover {
+    background-color: #374151;
+  }
+  

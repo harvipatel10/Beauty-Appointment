@@ -1,0 +1,251 @@
+/* General Styles */
+.beauty-about-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden; 
+  }
+  
+  /* Introduction Section */
+  .beauty-about-intro {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .beauty-about-intro-content{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+     max-width: 90%;
+  }
+  
+  .beauty-about-intro-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  
+  .beauty-about-title {
+    font-size: 4vw;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .beauty-about-subtitle{
+    font-size: 1.5vw;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .beauty-about-title{
+      font-size: 6vw;
+    }
+  
+    .beauty-about-subtitle{
+      font-size: 3vw;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 600px) {
+    .beauty-about-title{
+      font-size: 7vw;
+    }
+  
+    .beauty-about-subtitle{
+      font-size: 4vw;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .beauty-about-title {
+      font-size: 8vw;
+    }
+  
+    .beauty-about-subtitle {
+      font-size: 5vw;
+    }
+  }
+  
+  /* General Container */
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ff6a88;
+    font-weight: 1500;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Who We Are Section */
+  .beauty-about-section,
+  .beauty-offers-section,
+  .beauty-about-mission,
+  .beauty-about-experience {
+    background: #f8f8f8;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .beauty-section-title {
+    font-size: 28px;
+    color: #ff6a88;
+    margin-bottom: 20px;
+    padding:0 40px;
+  }
+  
+  .beauty-about-content,
+  .beauty-offers-content,
+  .beauty-mission-content,
+  .beauty-experience-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .beauty-icon {
+    font-size: 40px;
+    color: #ff6a88;
+    margin-right: 15px;
+  }
+  
+  .beauty-about-text,
+  .beauty-offers-text,
+  .beauty-mission-text,
+  .beauty-experience-text{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Team Section */
+  .beauty-about-team {
+    margin-bottom: 40px;
+  }
+  
+  .beauty-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .beauty-team-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .beauty-team-name {
+    font-size: 20px;
+    color: #222;
+    margin-top: 10px;
+  }
+  
+  .beauty-team-role {
+    font-size: 16px;
+    color: #ff6a88;
+  }
+  
+  /* Experience Section */
+  .beauty-about-experience {
+    background: #ffe4e1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .beauty-about-content,
+    .beauty-offers-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .beauty-icon {
+      margin-bottom: 10px;
+    }
+  
+    .beauty-team-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .beauty-section-title {
+      font-size: 24px;
+    }
+  
+    .beauty-about-text,
+    .beauty-offers-text,
+    .beauty-mission-text,
+    .beauty-experience-text{
+      font-size: 16px;
+    }
+  
+    .beauty-team-card {
+      padding: 15px;
+    }
+  
+  }
+  

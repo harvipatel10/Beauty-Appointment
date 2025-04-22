@@ -1,0 +1,163 @@
+
+/* General Navbar Styles */
+.BeautyNavbar {
+  background-color: #222;
+  padding: 20px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.beautynavbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Beautylogo {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: #ff6a88;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  list-style: none;
+  background: #444;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  min-width: 150px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  max-height: 350px;              
+  overflow-y: scroll;         
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown li {
+  padding: 2px;
+}
+
+.dropdown li a {
+  color: white;
+  font-size: 14px;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown li a:hover {
+  border-radius: 5px;
+}
+
+/* Mobile Toggle Button */
+.mobile-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Mobile Menu */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    padding-top: 60px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease-in-out;
+  }
+
+  .nav-links.mobile {
+    right: 0;
+  }
+
+  .nav-item {
+    padding: 3px 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item a {
+    font-size: 18px;
+    padding: 2px 20px;
+  }
+
+  /* Dropdown inside mobile menu */
+  .dropdown {
+    position: static;
+    display: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item.active .dropdown {
+    display: block;
+  }
+
+  .dropdown li {
+    padding: 3px 20px;
+  }
+
+  .mobile-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+   right: 20px;
+  }}
+

@@ -1,0 +1,176 @@
+/* General Styles */
+.beauty-service-container {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+    margin-top: -170px;
+  }
+  
+  /* Introduction Section */
+  .beauty-services-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+  }
+  
+  .beauty-services-hero-content{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+     max-width: 90%;
+  }
+  
+  .beauty-services-hero-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  
+  .beauty-services-hero-title {
+    font-size: 4vw;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .beauty-services-hero-description{
+    font-size: 1.5vw;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .beauty-services-hero-title{
+      font-size: 6vw;
+    }
+  
+    .beauty-services-hero-description{
+      font-size: 3vw;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 600px) {
+    .beauty-services-hero-title{
+      font-size: 7vw;
+    }
+  
+    .beauty-services-hero-description{
+      font-size: 4vw;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .beauty-services-hero-title{
+      font-size: 8vw;
+    }
+  
+    .beauty-services-hero-description{
+      font-size: 5vw;
+    }
+  }
+  
+  
+  /* Section Headings */
+  .beauty-services-men-heading,
+  .beauty-services-women-heading {
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  
+  .beauty-services-men-heading h1,
+  .beauty-services-women-heading h1 {
+    font-size: 3rem;
+    color: #000000;
+    border-bottom: 5px solid #ff6a88;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  
+  /* Grid Layout */
+  .beauty-services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  /* Service Card */
+  .beauty-services-card{
+    background: linear-gradient(145deg, #ff6a88, #ff9671);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .beauty-services-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Service Name */
+  .beauty-services-card-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .beauty-services-card-price {
+    font-size: 19px;
+    color: #4324f1;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-top: 20px;
+  }
+  
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .beauty-services-hero {
+      height: 50vh;
+      padding: 20px;
+    }
+  
+    .beauty-services-hero-title {
+      font-size: 24px;
+    }
+  
+    .beauty-services-hero-description {
+      font-size: 16px;
+    }
+  
+    .beauty-services-grid{
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .beauty-services-card{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,286 @@
+/* General Styles */
+.beauty-home-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden; 
+  }
+  
+  /* Introduction Section */
+  .beauty-hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .beauty-hero-content {
+    text-align: center;
+    position: relative;
+    padding: 30px;
+     max-width: 90%;
+  }
+  
+  .beauty-hero-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  
+  .beauty-hero-title {
+    font-size: 4vw;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .beauty-hero-subtitle {
+    font-size: 1.5vw;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .beauty-hero-title {
+      font-size: 6vw;
+    }
+  
+    .beauty-hero-subtitle {
+      font-size: 3vw;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 600px) {
+    .beauty-hero-title {
+      font-size: 7vw;
+    }
+  
+    .beauty-hero-subtitle {
+      font-size: 4vw;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .beauty-hero-title {
+      font-size: 8vw;
+    }
+  
+    .beauty-hero-subtitle {
+      font-size: 5vw;
+    }
+  }
+  
+  /* Highlights Section */
+  .beauty-highlights-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .beauty-section-title {
+    font-size: 36px;
+    color: #e91e63;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .beauty-highlights-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  
+  .beauty-highlight-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  
+  .beauty-highlight-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .beauty-icon {
+    font-size: 50px;
+    color: #e91e63;
+    margin-bottom: 15px;
+  }
+  
+  .beauty-highlight-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .beauty-highlight-text {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Testimonials Section */
+  .beauty-testimonials-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .beauty-testimonials-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .beauty-testimonial-card {
+    background: #f3e5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    position: relative;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .beauty-testimonial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .quote-icon {
+    font-size: 30px;
+    color: #e91e63;
+    margin: 0 5px;
+  }
+  
+  .beauty-testimonial-text {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .beauty-client-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* FAQs Section */
+  .faqs {
+    padding: 40px;
+    background: #f2f2f2;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .faqs h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2em;
+    color: #444;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .faq-item h3:hover {
+    background: #f9f9f9;
+  }
+  
+  .faq-item p {
+    display: none;
+    padding: 0 15px 15px;
+    text-align: left;
+    color: #666;
+  }
+  
+  .faq-item.active p {
+    display: block;
+  }
+  
+  .faq-item h3::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+  }
+  
+  .faq-item.active h3::after {
+    transform: rotate(45deg);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .faqs {
+      padding: 20px;
+    }
+  
+    .faq-item {
+      margin: 5px 0;
+    }
+  
+    .faq-item h3 {
+      font-size: 1.1em;
+      padding: 10px;
+    }
+  
+    .faq-item p {
+      padding: 0 10px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faqs h2 {
+      font-size: 2em;
+    }
+  
+    .faq-item h3 {
+      font-size: 1em;
+    }
+  
+    .faq-item h3::after {
+      right: 10px;
+      font-size: 1.2em;
+    }
+  }
+  

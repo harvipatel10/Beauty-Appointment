@@ -1,0 +1,215 @@
+
+
+/* General Styles */
+.beautyspa-pricing-container{
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden; 
+  }
+  
+  /* Introduction Section */
+  .beautyspa-pricing-hero{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+  }
+  
+  .beautyspa-pricing-content{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+     max-width: 90%;
+  }
+  
+  .beautyspa-pricing-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  
+  .beautyspa-pricing-title {
+    font-size: 4vw;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .beautyspa-pricing-description{
+    font-size: 1.5vw;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .beautyspa-pricing-title{
+      font-size: 6vw;
+    }
+  
+    .beautyspa-pricing-description{
+      font-size: 3vw;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 600px) {
+    .beautyspa-pricing-title{
+      font-size: 7vw;
+    }
+  
+    .beautyspa-pricing-description{
+      font-size: 4vw;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .beautyspa-pricing-title {
+      font-size: 8vw;
+    }
+  
+    .beauty-spa-gallery-description {
+      font-size: 5vw;
+    }
+  }
+  
+  
+  
+  
+  /* /* Toggle Buttons */
+  .beautyspa-pricing-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+  
+  .beautyspa-pricing-btn {
+    padding: 12px 30px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
+  }
+  
+  .beautyspa-pricing-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 117, 140, 0.5);
+  }
+  
+  .beautyspa-pricing-btn.active {
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+  }
+  
+  /* Pricing List */
+  .beautyspa-pricing-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .beautyspa-pricing-category {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .beautyspa-pricing-category h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Service Items */
+  .beautyspa-pricing-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .beautyspa-pricing-item:last-child {
+    border-bottom: none;
+  }
+  
+  .beautyspa-pricing-item:hover {
+    background: rgba(255, 111, 97, 0.1);
+  }
+  
+  /* Price */
+  .beautyspa-pricing-price {
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .beautyspa-pricing-title {
+      font-size: 2.5rem;
+    }
+  
+    .beautyspa-pricing-description {
+      font-size: 1rem;
+    }
+  
+    .beautyspa-pricing-toggle {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .beautyspa-pricing-btn {
+      width: 90%; 
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .beautyspa-pricing-title {
+      font-size: 2rem;
+    }
+  
+    .beautyspa-pricing-category h2 {
+      font-size: 1.5rem;
+    }
+  
+    .beautyspa-pricing-item {
+      font-size: 1rem;
+    }
+    
+    .beautyspa-pricing-btn {
+      font-size: 0.9rem;
+    }
+  } 
+  

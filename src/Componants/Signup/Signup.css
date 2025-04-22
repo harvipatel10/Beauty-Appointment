@@ -1,0 +1,284 @@
+/* Welcome Section Styling */
+.welcomeback-section {
+    text-align: center;
+    height: 20vh;  /* Adjusted for better visibility */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Welcome Text Styling */
+  .welcomeback-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff6a88;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  /* Individual Letter Styling */
+  .welcomeback-text span {
+    display: inline-block;
+    color: #ff6a88;
+    animation: letterBounceContinuous 1s ease-in-out infinite;
+  }
+  
+  /* Add delay to each letter */
+  .welcomeback-text span:nth-child(1) { animation-delay: 0s; }
+  .welcomeback-text span:nth-child(2) { animation-delay: 0.1s; }
+  .welcomeback-text span:nth-child(3) { animation-delay: 0.2s; }
+  .welcomeback-text span:nth-child(4) { animation-delay: 0.3s; }
+  .welcomeback-text span:nth-child(5) { animation-delay: 0.4s; }
+  .welcomeback-text span:nth-child(6) { animation-delay: 0.5s; }
+  .welcomeback-text span:nth-child(7) { animation-delay: 0.6s; }
+  .welcomeback-text span:nth-child(8) { animation-delay: 0.7s; }
+  .welcomeback-text span:nth-child(9) { animation-delay: 0.8s; }
+  .welcomeback-text span:nth-child(10) { animation-delay: 0.9s; }
+  .welcomeback-text span:nth-child(11) { animation-delay: 1.0s; }
+  .welcomeback-text span:nth-child(12) { animation-delay: 1.1s; }
+  
+  /* Keyframes for Continuous Bounce */
+  @keyframes letterBounceContinuous {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) { /* Tablet Screens */
+    .welcomeback-text {
+        font-size: 40px; /* Reduce font size */
+    }
+   
+  }
+  
+  @media screen and (max-width: 480px) { /* Mobile Screens */
+    .welcomeback-section {
+        height: 25vh; /* Increase height for better spacing */
+        padding: 15px;
+    }
+    .welcomeback-text {
+        font-size: 32px; /* Reduce font size for mobile */
+    }
+    
+  }
+  
+  
+  /* Main Container Styling */
+  .main-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjusted for better spacing */
+    background: #fe5a7b;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Signup Box */
+  .signup-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    height: auto; /* Allow content to dictate height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Form Spacing */
+  .signupform {
+    margin-top: 30px;
+  }
+  
+  /* Input Field Wrapper */
+  .input-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  /* Labels */
+  .input-field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .input-field input {
+    padding: 10px;
+    width: 100%;
+    max-width: 360px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Button */
+  button {
+    background-color: #0b0b0b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    background-color: #0e63ec;
+  }
+  
+  /* Message Link */
+  .message {
+    margin-top: 20px;
+  }
+  
+  .message a {
+    color: #56a5d8;
+    text-decoration: none;
+  }
+  
+  .message a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) { /* Tablet Screens */
+    .signup-container {
+      max-width: 90%; /* Adjust width */
+      padding: 25px;
+    }
+    
+    .input-field input {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Mobile Screens */
+    .main-container1 {
+      height: auto; /* Allow form to adjust height dynamically */
+      padding: 30px 15px;
+    }
+  
+    .signup-container {
+      padding: 20px;
+      max-width: 100%; /* Full width on mobile */
+    }
+  
+    .signup-container h2 {
+      font-size: 24px; /* Smaller heading for mobile */
+    }
+  
+    .input-field input {
+      font-size: 14px;
+      padding: 8px;
+      max-width: 100%;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+  
+  
+  /* Thank You Message Container */
+  .thank-you-message {
+    background-color: #000000;  /* Black background */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    padding: 20px; /* Ensures proper spacing on all screens */
+  }
+  
+  /* Styling the Thank You Text */
+  .thank-you-message h1 {
+    font-size: 50px;
+    color: #ff6a88;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Individual Letter Styling and Animation */
+  .thank-you-message h1 span {
+    display: inline-block;
+    animation: bounce 1s ease-in-out infinite alternate;
+    color: #ff6a88;
+  }
+  
+  /* Adding Delay for Each Letter's Animation */
+  .thank-you-message h1 span:nth-child(odd) { animation-delay: 0.2s; }
+  .thank-you-message h1 span:nth-child(even) { animation-delay: 0.4s; }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) { /* For tablets */
+    .thank-you-message {
+        height: 25vh; /* Increase height */
+    }
+    .thank-you-message h1 {
+        font-size: 42px; /* Reduce font size slightly */
+    }
+  }
+  
+  @media (max-width: 768px) { /* For small tablets */
+    .thank-you-message {
+        height: 28vh; /* Adjust height */
+        padding: 15px;
+    }
+    .thank-you-message h1 {
+        font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile screens */
+    .thank-you-message {
+        height: 30vh; /* Increase height for better visibility */
+        padding: 10px;
+    }
+    .thank-you-message h1 {
+        font-size: 28px;
+        letter-spacing: 1px; /* Reduce letter spacing */
+    }
+  }
+  
+  

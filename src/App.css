@@ -1,0 +1,842 @@
+/* Container */
+.men-hairspa-container, 
+.men-haircoloring-container,
+.men-haircut-container,
+.men-shavinggrooming-container,
+.men-facial-container,
+.men-body-scrub-container,
+.men-manicurepedicure-container,
+.men-waxing-container,
+.men-detox-container,
+.men-acne-container,
+.men-hairloss-container,
+
+.women-haircutstyling-container,
+.women-haircoloring-container,
+.women-hairspa-container,
+.women-hairsmoothening-container,
+.women-facialsskincare-container,
+.women-beautyantiagingrejuvenation-container,
+.women-beautymakeupservice-container,
+.women-bodymassagespa-container, 
+.women-bodyscrubpolishing-container,
+.women-BeautyBodyWrapsHydration-container,
+.women-BeautyManicurePedicure-container,
+.women-BeautyNailArtExtensions-container,   
+.women-BeautyWaxingHairRemoval-container,
+.women-BeautyThreadingEyebrow-container,
+.women-BeautyEyebrowEyelashTinting-container,
+.women-BeautyDetoxSlimmingTherapy-container,
+.women-BeautyBridalPartyPackages-container{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+
+/* Hero Section */
+.men-hairspa-hero, 
+.men-haircoloring-hero,
+.men-haircut-hero,
+.shavinggrooming-hero,
+.menfacialgrooming-hero,
+.menbodyscrub-hero,
+.men-manicurepedicure-hero,
+.men-waxing-hero,
+.men-detox-hero,
+.men-acne-hero,
+.men-hairloss-hero,
+.women-haircutstyling-hero,
+.women-haircoloring-hero,
+.women-hairspa-hero,
+.women-hairspa-hero,
+
+.women-haircutstyling-hero,
+.women-haircoloring-hero,
+.women-hairspa-hero,
+.women-hairsmoothening-hero,
+.women-facialsskincare-hero,
+.women-beautyantiagingrejuvenation-hero,
+.women-beautymakeupservice-hero,
+.women-bodymassagespa-hero,
+.women-bodyscrubpolishing-hero,
+.women-BeautyBodyWrapsHydration-hero,
+.women-BeautyManicurePedicure-hero,
+.women-BeautyNailArtExtensions-hero,
+.women-BeautyWaxingHairRemoval-hero,
+.women-BeautyThreadingEyebrow-hero,
+.women-BeautyEyebrowEyelashTinting-hero,
+.women-BeautyDetoxSlimmingTherapy-hero,
+.women-BeautyBridalPartyPackages-hero{
+  background: linear-gradient(135deg, #ff6a88, #ff3e6b);
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.men-hairspa-hero-content, 
+.men-haircoloring-hero-content,
+.men-haircut-hero-content,
+.shavinggrooming-hero-content,
+.menfacialgrooming-hero-content,
+.menbodyscrub-hero-content,
+.men-manicurepedicure-hero-content,
+.men-waxing-hero-content,
+.men-detox-hero-content,
+.men-acne-hero-content,
+.men-hairloss-hero-content,
+
+.women-haircutstyling-content,
+.women-haircoloring-content,
+.women-hairspa-content,
+.women-hairsmoothening-content,
+.women-facialsskincare-content,
+.women-beautyantiagingrejuvenation-content,
+.women-beautymakeupservice-content,
+.women-bodymassagespa-content,
+.women-bodyscrubpolishing-content,
+.women-BeautyBodyWrapsHydration-content,
+.women-BeautyManicurePedicure-content,
+.women-BeautyNailArtExtensions-content,
+.women-BeautyWaxingHairRemoval-content,
+.women-BeautyThreadingEyebrow-content,
+.women-BeautyEyebrowEyelashTinting-content,
+.women-BeautyDetoxSlimmingTherapy-content,
+.women-BeautyBridalPartyPackages-content{
+  max-width: 1800px;
+  margin: auto;
+}
+
+.men-hairspa-title, 
+.men-haircoloring-title,
+.men-haircut-title,
+.shavinggrooming-title,
+.menfacialgrooming-title,
+.menbodyscrub-title,
+.men-manicurepedicure-title,
+.men-waxing-title,
+.men-detox-title,
+.men-acne-title,
+.men-hairloss-title,
+
+.women-haircutstyling-title,
+.women-haircoloring-title,
+.women-hairspa-title,
+.women-hairsmoothening-title,
+.women-facialsskincare-title,
+.women-beautyantiagingrejuvenation-title,
+.women-beautymakeupservice-title,
+.women-bodymassagespa-title,
+.women-bodyscrubpolishing-title,
+.women-BeautyBodyWrapsHydration-title,
+.women-BeautyManicurePedicure-title,
+.women-BeautyNailArtExtensions-title,
+.women-BeautyWaxingHairRemoval-title,
+.women-BeautyThreadingEyebrow-title,
+.women-BeautyEyebrowEyelashTinting-title,
+.women-BeautyDetoxSlimmingTherapy-title,
+.women-BeautyBridalPartyPackages-title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.men-hairspa-description, 
+.men-haircoloring-description,
+.men-haircut-description,
+.shavinggrooming-description,
+.menfacialgrooming-description,
+.menbodyscrub-description,
+.men-manicurepedicure-description,
+.men-waxing-description,
+.men-detox-description,
+.men-acne-description,
+.men-hairloss-description,
+
+.women-haircutstyling-description,
+.women-haircoloring-description,
+.women-hairspa-description,
+.women-hairsmoothening-description,
+.women-facialsskincare-description,
+.women-beautyantiagingrejuvenation-description,
+.women-beautymakeupservice-description,
+.women-bodymassagespa-description,
+.women-bodyscrubpolishing-description,
+.women-BeautyBodyWrapsHydration-description,
+.women-BeautyManicurePedicure-description,
+.women-BeautyNailArtExtensions-description,
+.women-BeautyWaxingHairRemoval-description,
+.women-BeautyThreadingEyebrow-description,
+.women-BeautyEyebrowEyelashTinting-description,
+.women-BeautyDetoxSlimmingTherapy-description,
+.women-BeautyBridalPartyPackages-description{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Section Heading */
+.men-hairspa-heading h1, 
+.men-haircoloring-heading h1,
+.men-haircut-heading h1,
+.shaving-heading h1,
+.menfacialgrooming-heading h1,
+.menbodyscrub-heading h1,
+.men-manicurepedicure-heading h1,
+.men-waxing-heading h1,
+.men-detox-heading h1,
+.men-acne-heading h1,
+.men-hairloss-heading h1,
+
+.women-haircuts-heading h1,
+.women-haircoloring-heading h1,
+.women-hairspa-heading h1,
+.women-hairsmoothening-heading h1,
+.women-facialsskincare-heading h1,
+.women-beautyantiagingrejuvenation-heading h1,
+.women-beautymakeupservice-heading h1,
+.women-bodymassagespa-heading h1,
+.women-bodyscrubpolishing-heading h1,
+.women-BeautyBodyWrapsHydration-heading h1,
+.women-BeautyManicurePedicure-heading h1,
+.women-BeautyNailArtExtensions-heading h1,
+.women-BeautyWaxingHairRemoval-heading h1,
+.women-BeautyThreadingEyebrow-heading h1,
+.women-BeautyEyebrowEyelashTinting-heading h1,
+.women-BeautyDetoxSlimmingTherapy-heading h1,
+.women-BeautyBridalPartyPackages-heading h1 {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Grid Layout */
+.men-hairspa-services, 
+.men-haircoloring-services,
+.men-haircut-services,
+.shaving-services,
+.menfacialgrooming-services,
+.menbodyscrub-services,
+.men-manicurepedicure-services,
+.men-waxing-services,
+.men-detox-services,
+.men-acne-services,
+.men-hairloss-services,
+
+.women-haircutstyling-services,
+.women-haircoloring-services,
+.women-hairspa-services,
+.women-hairsmoothening-services,
+.women-facialsskincare-services,
+.women-beautyantiagingrejuvenation-services,
+.women-beautymakeupservice-services,
+.women-bodymassagespa-services,
+.women-bodyscrubpolishing-services,
+.women-BeautyBodyWrapsHydration-services,
+.women-BeautyManicurePedicure-services,
+.women-BeautyNailArtExtensions-services,
+.women-BeautyWaxingHairRemoval-services,
+.women-BeautyThreadingEyebrow-services,
+.women-BeautyEyebrowEyelashTinting-services,
+.women-BeautyDetoxSlimmingTherapy-services,
+.women-BeautyBridalPartyPackages-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+
+.women-haircuts-category {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.women-haircuts-category h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  border-bottom: 5px solid #ff6a88;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+
+/* Card Styling */
+.men-hairspa-card, 
+.men-haircoloring-card,
+.men-haircut-card,
+.shaving-card,
+.menfacialgrooming-card,
+.menbodyscrub-card,
+.men-manicurepedicure-card,
+.men-waxing-card,
+.men-detox-card,
+.men-acne-card,
+.men-hairloss-card,
+
+.women-haircutstyling-card,
+.women-haircoloring-card,
+.women-hairspa-card,
+.women-hairsmoothening-card,
+.women-facialsskincare-card,
+.women-beautyantiagingrejuvenation-card,
+.women-beautymakeupservice-card,
+.women-bodymassagespa-card,
+.women-bodyscrubpolishing-card,
+.women-BeautyBodyWrapsHydration-card,
+.women-BeautyManicurePedicure-card,
+.women-BeautyNailArtExtensions-card,
+.women-BeautyWaxingHairRemoval-card,
+.women-BeautyThreadingEyebrow-card,
+.women-BeautyEyebrowEyelashTinting-card,
+.women-BeautyDetoxSlimmingTherapy-card,
+.women-BeautyBridalPartyPackages-card{
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+}
+
+.men-hairspa-card:hover, 
+.men-haircoloring-card:hover,
+.men-haircut-card:hover,
+.shaving-card:hover,
+.menfacialgrooming-card:hover,
+.menbodyscrub-card:hover,
+.men-manicurepedicure-card:hover,
+.men-waxing-card:hover,
+.men-detox-card:hover,
+.men-acne-card:hover,
+.men-hairloss-card:hover,
+
+.women-haircutstyling-card:hover,
+.women-haircoloring-card:hover,
+.women-hairspa-card:hover,
+.women-hairsmoothening-card:hover,
+.women-facialsskincare-card:hover,
+.women-beautyantiagingrejuvenation-card:hover,
+.women-beautymakeupservice-card:hover,
+.women-bodymassagespa-card:hover,
+.women-bodyscrubpolishing-card:hover,
+.women-BeautyBodyWrapsHydration-card:hover,
+.women-BeautyManicurePedicure-card:hover,
+.women-BeautyNailArtExtensions-card:hover,
+.women-BeautyWaxingHairRemoval-card:hover,
+.women-BeautyThreadingEyebrow-card:hover,
+.women-BeautyEyebrowEyelashTinting-card:hover,
+.women-BeautyDetoxSlimmingTherapy-card:hover,
+.women-BeautyBridalPartyPackages-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Treatment Name */
+.men-hairspa-name ,
+.men-haircoloring-name,
+.men-haircut-name,
+.shaving-name,
+.menfacialgrooming-name,
+.menbodyscrub-name,
+.men-manicurepedicure-name,
+.men-waxing-name,
+.men-detox-name,
+.men-acne-name,
+.men-hairloss-name,
+
+.women-haircutstyling-name ,
+.women-haircoloring-name,
+.women-hairspa-name,
+.women-hairsmoothening-name ,
+.women-facialsskincare-name,
+.women-beautyantiagingrejuvenation-name,
+.women-beautymakeupservice-name ,
+.women-bodymassagespa-name,
+.women-bodyscrubpolishing-name,
+.women-BeautyBodyWrapsHydration-name ,
+.women-BeautyManicurePedicure-name,
+.women-BeautyNailArtExtensions-name,
+.women-BeautyWaxingHairRemoval-name ,
+.women-BeautyThreadingEyebrow-name,
+.women-BeautyEyebrowEyelashTinting-name,
+.women-BeautyDetoxSlimmingTherapy-name ,
+.women-BeautyBridalPartyPackages-name{
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6a88;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Benefits */
+.men-hairspa-benefits ,
+.men-haircoloring-benefits,
+.men-haircut-benefits,
+.shaving-benefits,
+.menfacialgrooming-benefits,
+.menbodyscrub-benefits,
+.men-manicurepedicure-benefits,
+.men-waxing-benefits,
+.men-detox-benefits,
+.men-acne-benefits,
+.men-hairloss-benefits,
+
+.women-haircutstyling-benefits,
+.women-haircoloring-benefits,
+.women-hairspa-benefits,
+.women-hairsmoothening-benefits,
+.women-facialsskincare-benefits,
+.women-beautyantiagingrejuvenation-benefits,
+.women-beautymakeupservice-benefits,
+.women-bodymassagespa-benefits,
+.women-bodyscrubpolishing-benefits,
+.women-BeautyBodyWrapsHydration-benefits,
+.women-BeautyManicurePedicure-benefits,
+.women-BeautyNailArtExtensions-benefits,
+.women-BeautyWaxingHairRemoval-benefits,
+.women-BeautyThreadingEyebrow-benefits,
+.women-BeautyEyebrowEyelashTinting-benefits,
+.women-BeautyDetoxSlimmingTherapy-benefits,
+.women-BeautyBridalPartyPackages-benefits{
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Price */
+.men-hairspa-price,
+.men-haircoloring-price,
+.men-haircut-price,
+.shaving-price,
+.menfacialgrooming-price,
+.menbodyscrub-price,
+.men-manicurepedicure-price,
+.men-waxing-price,
+.men-detox-price,
+.men-acne-price,
+.men-hairloss-price,
+
+.women-haircutstyling-price,
+.women-haircoloring-price,
+.women-hairspa-price,
+.women-hairsmoothening-price,
+.women-facialsskincare-price,
+.women-beautyantiagingrejuvenation-price,
+.women-beautymakeupservice-price,
+.women-bodymassagespa-price,
+.women-bodyscrubpolishing-price,
+.women-BeautyBodyWrapsHydration-price,
+.women-BeautyManicurePedicure-price,
+.women-BeautyNailArtExtensions-price,
+.women-BeautyWaxingHairRemoval-price,
+.women-BeautyThreadingEyebrow-price,
+.women-BeautyEyebrowEyelashTinting-price,
+.women-BeautyDetoxSlimmingTherapy-price,
+.women-BeautyBridalPartyPackages-price {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block;
+  background: #f39c12;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Process Steps */
+.men-hairspa-steps,
+.men-haircoloring-steps,
+.men-haircut-steps,
+.shaving-steps,
+.menfacialgrooming-steps,
+.menbodyscrub-steps,
+.men-manicurepedicure-steps,
+.men-waxing-steps,
+.men-detox-steps,
+.men-acne-steps,
+.men-hairloss-steps,
+
+.women-haircutstyling-steps,
+.women-haircoloring-steps,
+.women-hairspa-steps,
+.women-hairsmoothening-steps,
+.women-facialsskincare-steps,
+.women-beautyantiagingrejuvenation-steps,
+.women-beautymakeupservice-steps,
+.women-bodymassagespa-steps,
+.women-bodyscrubpolishing-steps,
+.women-BeautyBodyWrapsHydration-steps,
+.women-BeautyManicurePedicure-steps,
+.women-BeautyNailArtExtensions-steps,
+.women-BeautyWaxingHairRemoval-steps,
+.women-BeautyThreadingEyebrow-steps,
+.women-BeautyEyebrowEyelashTinting-steps,
+.women-BeautyDetoxSlimmingTherapy-steps,
+.women-BeautyBridalPartyPackages-steps{
+  margin-top: 15px;
+  border-top: 2px solid #ff6a88;
+  padding-top: 10px;
+}
+
+.men-hairspa-steps h4 ,
+.men-haircoloring-steps h4,
+.men-haircut-steps h4,
+.shaving-steps h4,
+.menfacialgrooming-steps h4,
+.menbodyscrub-steps h4,
+.men-manicurepedicure-steps h4,
+.men-waxing-steps h4,
+.men-detox-steps h4,
+.men-acne-steps h4,
+.men-hairloss-steps h4,
+
+.women-haircutstyling-steps h4,
+.women-haircoloring-steps h4,
+.women-hairspa-steps h4,
+.women-hairsmoothening-steps h4,
+.women-facialsskincare-steps h4,
+.women-beautyantiagingrejuvenation-steps h4,
+.women-beautymakeupservice-steps h4,
+.women-bodymassagespa-steps h4,
+.women-bodyscrubpolishing-steps h4,
+.women-BeautyBodyWrapsHydration-steps h4,
+.women-BeautyManicurePedicure-steps h4,
+.women-BeautyNailArtExtensions-steps h4,
+.women-BeautyWaxingHairRemoval-steps h4,
+.women-BeautyThreadingEyebrow-steps h4,
+.women-BeautyEyebrowEyelashTinting-steps h4,
+.women-BeautyDetoxSlimmingTherapy-steps h4,
+.women-BeautyBridalPartyPackages-steps h4{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.men-hairspa-steps ul ,
+.men-haircoloring-steps ul,
+.men-haircut-steps ul,
+.shaving-steps ul,
+.menfacialgrooming-steps ul,
+.menbodyscrub-steps ul,
+.men-manicurepedicure-steps ul,
+.men-waxing-steps ul,
+.men-detox-steps ul,
+.men-acne-steps ul,
+.men-hairloss-steps ul,
+
+.women-haircutstyling-steps ul,
+.women-haircoloring-steps ul,
+.women-hairspa-steps ul,
+.women-hairsmoothening-steps ul,
+.women-facialsskincare-steps ul,
+.women-beautyantiagingrejuvenation-steps ul,
+.women-beautymakeupservice-steps ul,
+.women-bodymassagespa-steps ul,
+.women-bodyscrubpolishing-steps ul,
+.women-BeautyBodyWrapsHydration-steps ul,
+.women-BeautyManicurePedicure-steps ul,
+.women-BeautyNailArtExtensions-steps ul,
+.women-BeautyWaxingHairRemoval-steps ul,
+.women-BeautyThreadingEyebrow-steps ul,
+.women-BeautyEyebrowEyelashTinting-steps ul,
+.women-BeautyDetoxSlimmingTherapy-steps ul,
+.women-BeautyBridalPartyPackages-steps ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.men-hairspa-steps li ,
+.men-haircoloring-steps li,
+.men-haircut-steps li,
+.shaving-steps li,
+.menfacialgrooming-steps li,
+.menbodyscrub-steps li,
+.men-manicurepedicure-steps li,
+.men-waxing-steps li,
+.men-detox-steps li,
+.men-acne-steps li,
+.men-hairloss-steps li,
+
+.women-haircutstyling-steps li,
+.women-haircoloring-steps li,
+.women-hairspa-steps li,
+.women-hairsmoothening-steps li,
+.women-facialsskincare-steps li,
+.women-beautyantiagingrejuvenation-steps li,
+.women-beautymakeupservice-steps li,
+.women-bodymassagespa-steps li,
+.women-bodyscrubpolishing-steps li,
+.women-BeautyBodyWrapsHydration-steps li,
+.women-BeautyManicurePedicure-steps li,
+.women-BeautyNailArtExtensions-steps li,
+.women-BeautyWaxingHairRemoval-steps li,
+.women-BeautyThreadingEyebrow-steps li,
+.women-BeautyEyebrowEyelashTinting-steps li,
+.women-BeautyDetoxSlimmingTherapy-steps li,
+.women-BeautyBridalPartyPackages-steps li{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+
+.men-hairspa-steps li::before ,
+.men-haircoloring-steps li::before,
+.men-haircut-steps li::before,
+.shaving-steps li::before,
+.menfacialgrooming-steps li::before,
+.menbodyscrub-steps li::before,
+.men-manicurepedicure-steps li::before,
+.men-waxing-steps li::before,
+.men-detox-steps li::before,
+.men-acne-steps li::before,
+.men-hairloss-steps li::before,
+
+.women-haircutstyling-steps li::before,
+.women-haircoloring-steps li::before,
+.women-hairspa-steps li::before,
+.women-hairsmoothening-steps li::before,
+.women-facialsskincare-steps li::before,
+.women-beautyantiagingrejuvenation-steps li::before,
+.women-beautymakeupservice-steps li::before,
+.women-bodymassagespa-steps li::before,
+.women-bodyscrubpolishing-steps li::before,
+.women-BeautyBodyWrapsHydration-steps li::before,
+.women-BeautyManicurePedicure-steps li::before,
+.women-BeautyNailArtExtensions-steps li::before,
+.women-BeautyWaxingHairRemoval-steps li::before,
+.women-BeautyThreadingEyebrow-steps li::before,
+.women-BeautyEyebrowEyelashTinting-steps li::before,
+.women-BeautyDetoxSlimmingTherapy-steps li::before,
+.women-BeautyBridalPartyPackages-steps li::before{
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff6a88;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .men-hairspa-title,
+  .men-haircoloring-title,
+  .men-haircut-title,
+.shaving-title,
+.menfacialgrooming-title,
+.menbodyscrub-title,
+.men-manicurepedicure-title,
+.men-waxing-title,
+.men-detox-title,
+.men-acne-title,
+.men-hairloss-title,
+
+.women-haircutstyling-title,
+.women-haircoloring-title,
+.women-hairspa-title,
+.women-hairsmoothening-title,
+.women-facialsskincare-title,
+.women-beautyantiagingrejuvenation-title,
+.women-beautymakeupservice-title,
+.women-bodymassagespa-title,
+.women-bodyscrubpolishing-title,
+.women-BeautyBodyWrapsHydration-title,
+.women-BeautyManicurePedicure-title,
+.women-BeautyNailArtExtensions-title,
+.women-BeautyWaxingHairRemoval-title,
+.women-BeautyThreadingEyebrow-title,
+.women-BeautyEyebrowEyelashTinting-title,
+.women-BeautyDetoxSlimmingTherapy-title,
+.women-BeautyBridalPartyPackages-title{
+    font-size: 30px;
+  }
+
+.men-hairspa-name ,
+.men-haircoloring-name,
+.men-haircut-name,
+.shaving-name,
+.menfacialgrooming-name,
+.menbodyscrub-name,
+.men-manicurepedicure-name,
+.men-waxing-name,
+.men-detox-name,
+.men-acne-name,
+.men-hairloss-name,
+
+.women-haircutstyling-name,
+.women-haircoloring-name,
+.women-hairspa-name,
+.women-hairsmoothening-name,
+.women-facialsskincare-name,
+.women-beautyantiagingrejuvenation-name,
+.women-beautymakeupservice-name,
+.women-bodymassagespa-name,
+.women-bodyscrubpolishing-name,
+.women-BeautyBodyWrapsHydration-name,
+.women-BeautyManicurePedicure-name,
+.women-BeautyNailArtExtensions-name,
+.women-BeautyWaxingHairRemoval-name,
+.women-BeautyThreadingEyebrow-name,
+.women-BeautyEyebrowEyelashTinting-name,
+.women-BeautyDetoxSlimmingTherapy-name,
+.women-BeautyBridalPartyPackages-name{
+    font-size: 20px;
+  }
+
+  .men-hairspa-benefits ,
+  .men-haircoloring-benefits,
+  .men-haircut-benefits,
+.shaving-benefits,
+.menfacialgrooming-benefits,
+.menbodyscrub-benefits,
+.men-manicurepedicure-benefits,
+.men-waxing-benefits,
+.men-detox-benefits,
+.men-acne-benefits,
+.men-hairloss-benefits,
+
+.women-haircutstyling-benefits,
+.women-haircoloring-benefits,
+.women-hairspa-benefits,
+.women-hairsmoothening-benefits,
+.women-facialsskincare-benefits,
+.women-beautyantiagingrejuvenation-benefits,
+.women-beautymakeupservice-benefits,
+.women-bodymassagespa-benefits,
+.women-bodyscrubpolishing-benefits,
+.women-BeautyBodyWrapsHydration-benefits,
+.women-BeautyManicurePedicure-benefits,
+.women-BeautyNailArtExtensions-benefits,
+.women-BeautyWaxingHairRemoval-benefits,
+.women-BeautyThreadingEyebrow-benefits,
+.women-BeautyEyebrowEyelashTinting-benefits,
+.women-BeautyDetoxSlimmingTherapy-benefits,
+.women-BeautyBridalPartyPackages-benefits {
+    font-size: 14px;
+  }
+
+  .men-hairspa-price,
+  .men-haircoloring-price,
+  .men-haircut-price,
+.shaving-price,
+.menfacialgrooming-price,
+.menbodyscrub-price,
+.men-manicurepedicure-price,
+.men-waxing-price,
+.men-detox-price,
+.men-acne-price,
+.men-hairloss-price,
+
+.women-haircutstyling-price,
+.women-haircoloring-price,
+.women-hairspa-price,
+.women-hairsmoothening-price,
+.women-facialsskincare-price,
+.women-beautyantiagingrejuvenation-price,
+.women-beautymakeupservice-price,
+.women-bodymassagespa-price,
+.women-bodyscrubpolishing-price,
+.women-BeautyBodyWrapsHydration-price,
+.women-BeautyManicurePedicure-price,
+.women-BeautyNailArtExtensions-price,
+.women-BeautyWaxingHairRemoval-price,
+.women-BeautyThreadingEyebrow-price,
+.women-BeautyEyebrowEyelashTinting-price,
+.women-BeautyDetoxSlimmingTherapy-price,
+.women-BeautyBridalPartyPackages-price{
+    font-size: 16px;
+  }
+
+  .men-hairspa-steps h4 ,
+  .men-haircoloring-steps h4,
+  .men-haircut-steps h4,
+.shaving-steps h4,
+.menfacialgrooming-steps h4,
+.menbodyscrub-steps h4,
+.men-manicurepedicure-steps h4,
+.men-waxing-steps h4,
+.men-detox-steps h4,
+.men-acne-steps h4,
+.men-hairloss-steps h4,
+
+.women-haircutstyling-steps h4,
+.women-haircoloring-steps h4,
+.women-hairspa-steps h4,
+.women-hairsmoothening-steps h4,
+.women-facialsskincare-steps h4,
+.women-beautyantiagingrejuvenation-steps h4,
+.women-beautymakeupservice-steps h4,
+.women-bodymassagespa-steps h4,
+.women-bodyscrubpolishing-steps h4,
+.women-BeautyBodyWrapsHydration-steps h4,
+.women-BeautyManicurePedicure-steps h4,
+.women-BeautyNailArtExtensions-steps h4,
+.women-BeautyWaxingHairRemoval-steps h4,
+.women-BeautyThreadingEyebrow-steps h4,
+.women-BeautyEyebrowEyelashTinting-steps h4,
+.women-BeautyDetoxSlimmingTherapy-steps h4,
+.women-BeautyBridalPartyPackages-steps h4{
+    font-size: 16px;
+  }
+
+  .men-hairspa-steps ul,
+  .men-haircoloring-steps ul,
+  .men-haircut-steps ul,
+.shaving-steps ul,
+.menfacialgrooming-steps ul,
+.menbodyscrub-steps ul,
+.men-manicurepedicure-steps ul,
+.men-waxing-steps ul,
+.men-detox-steps ul,
+.men-acne-steps ul,
+.men-hairloss-steps ul,
+
+.women-haircutstyling-steps ul,
+.women-haircoloring-steps ul,
+.women-hairspa-steps ul,
+.women-hairsmoothening-steps ul,
+.women-facialsskincare-steps ul,
+.women-beautyantiagingrejuvenation-steps ul,
+.women-beautymakeupservice-steps ul,
+.women-bodymassagespa-steps ul,
+.women-bodyscrubpolishing-steps ul,
+.women-BeautyBodyWrapsHydration-steps ul,
+.women-BeautyManicurePedicure-steps ul,
+.women-BeautyNailArtExtensions-steps ul,
+.women-BeautyWaxingHairRemoval-steps ul,
+.women-BeautyThreadingEyebrow-steps ul,
+.women-BeautyEyebrowEyelashTinting-steps ul,
+.women-BeautyDetoxSlimmingTherapy-steps ul,
+.women-BeautyBridalPartyPackages-steps ul{
+    font-size: 13px;
+  }
+}
