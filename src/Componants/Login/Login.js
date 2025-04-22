@@ -22,10 +22,6 @@ const Login = () => {
     });
   };
 
-  // Handle password visibility toggle
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
 
   // Handle form submission
   const handleLogin = (event) => {
@@ -85,13 +81,7 @@ const Login = () => {
                 onChange={handleChange}
                 required
               />
-              <button
-                type="button"
-                className="show-password-btn"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? "Hide" : "Show"}
-              </button>
+           
             </div>
             <button type="submit">Login</button>
           </form>
