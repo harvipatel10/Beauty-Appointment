@@ -7,7 +7,6 @@ const menTreatments = [
     name: "Hair Fall Control Spa", 
     benefits: "Strengthens roots, prevents breakage, promotes hair growth", 
     price: "₹2,000 - ₹3,000",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4", 
     process: [
       "Scalp analysis and deep cleansing",
       "Nourishing oil massage",
@@ -20,7 +19,6 @@ const menTreatments = [
     name: "Keratin Repair Spa", 
     benefits: "Restores smoothness, repairs damage, enhances shine", 
     price: "₹2,500 - ₹4,000",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Deep cleansing with sulfate-free shampoo",
       "Application of keratin-infused mask",
@@ -33,7 +31,6 @@ const menTreatments = [
     name: "Protein Nourishment Spa", 
     benefits: "Deeply nourishes weak, brittle hair", 
     price: "₹1,800 - ₹2,500",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Protein-rich shampoo wash",
       "Application of protein mask",
@@ -46,7 +43,6 @@ const menTreatments = [
     name: "Oil Balancing Hair Spa", 
     benefits: "Regulates excessive scalp oil production", 
     price: "₹1,500 - ₹2,200",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Scalp analysis and oil control shampoo",
       "Gentle exfoliation to remove buildup",
@@ -59,7 +55,6 @@ const menTreatments = [
     name: "Anti-Frizz & Smoothing Spa", 
     benefits: "Controls frizz, softens hair, provides smooth texture", 
     price: "₹2,500 - ₹3,500",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Moisturizing shampoo and deep conditioning",
       "Application of anti-frizz serum",
@@ -72,7 +67,6 @@ const menTreatments = [
     name: "Scalp Rejuvenation Therapy", 
     benefits: "Detoxifies scalp, improves circulation, stimulates growth", 
     price: "₹2,000 - ₹2,800",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Deep scalp cleansing and exfoliation",
       "Herbal infusion scalp massage",
@@ -85,7 +79,6 @@ const menTreatments = [
     name: "Ayurvedic Hair Spa", 
     benefits: "Uses herbal extracts to strengthen hair naturally", 
     price: "₹2,200 - ₹3,200",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Herbal oil massage with traditional ingredients",
       "Steam therapy for deep nourishment",
@@ -98,7 +91,6 @@ const menTreatments = [
     name: "Cooling Menthol Scalp Spa", 
     benefits: "Soothes the scalp, relieves irritation & stress", 
     price: "₹1,500 - ₹2,000",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
     process: [
       "Menthol-infused shampoo wash",
       "Cooling scalp massage with mint extract",
@@ -133,16 +125,6 @@ const HairSpaScalpTreatments = () => {
         {menTreatments.map((treatment, index) => (
           <div key={index} className="men-hairspa-card">
              {/* Video Section */}
-            <video
-              className="men-hairspa-video"
-              style={{ width: "100%"}}
-              unmuted
-              loop
-              controls
-              
-            >
-              <source src={treatment.video} type="video/mp4" />
-            </video>
 
             <h3 className="men-hairspa-name">{treatment.name}</h3>
             <p className="men-hairspa-benefits">{treatment.benefits}</p>
