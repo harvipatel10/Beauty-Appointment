@@ -25,8 +25,14 @@ const Login = () => {
 
     const { email, password } = formData;
 
-    if (email === "" && password === "") {
+    // Replace these with your desired credentials
+    const validEmail = "";
+    const validPassword = "";
+
+    if (email === validEmail && password === validPassword) {
       alert("Login successful!");
+      // Navigate to another page if needed
+      // navigate("/dashboard");
     } else {
       alert("Invalid email or password. Please try again.");
     }
