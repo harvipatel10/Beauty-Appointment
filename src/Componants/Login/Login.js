@@ -25,10 +25,10 @@ const Login = () => {
 
     const { email, password } = formData;
 
-    // Allow login with any email and password (both should not be empty)
-    if (email !== "" && password !== "") {
+    // Allow login if both fields are filled (without checking specific values)
+    if (email && password) {
       alert("Login successful!");
-      navigate("/home"); // Redirect to the home page after successful login
+      navigate("/home"); // Redirect to home page after successful login
     } else {
       alert("Please enter both email and password.");
     }
