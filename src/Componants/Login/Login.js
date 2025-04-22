@@ -8,8 +8,7 @@ const Login = () => {
 
   // State for form fields
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    password: "", // Only store password as it's the only required field
   });
 
   // Handle input change
@@ -29,7 +28,7 @@ const Login = () => {
   const handleLogin = (event) => {
     event.preventDefault(); // Prevent page reload
 
-    const { email, password } = formData;
+    const { password } = formData;
 
     if (password === "") {
       alert("Password is required.");
@@ -72,14 +71,6 @@ const Login = () => {
         <div className="login-container">
           <h2>Login</h2>
           <form onSubmit={handleLogin} className="login">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
             <div className="password-field">
               <input
                 type={showPassword ? "text" : "password"} // Toggle password visibility
