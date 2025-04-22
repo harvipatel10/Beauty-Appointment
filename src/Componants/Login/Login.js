@@ -4,6 +4,7 @@ import "../Login/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   // State for form fields
   const [formData, setFormData] = useState({
@@ -19,23 +20,36 @@ const Login = () => {
     });
   };
 
+  // Handle password visibility toggle
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   // Handle form submission
   const handleLogin = (event) => {
     event.preventDefault(); // Prevent page reload
 
     const { email, password } = formData;
 
-    // Replace these with your desired credentials
-    const validEmail = "";
-    const validPassword = "";
-
-    if (email === validEmail && password === validPassword) {
-      alert("Login successful!");
-      // Navigate to another page if needed
-      // navigate("/dashboard");
-    } else {
-      alert("Invalid email or password. Please try again.");
+    if (password === "") {
+      alert("Password is required.");
+      return;
     }
+
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+      return;
+    }
+
+    const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d|.*\W).*$/;
+    if (!passwordPattern.test(password)) {
+      alert("Password must contain at least one letter and one number or special character.");
+      return;
+    }
+
+    // Assuming the login is successful
+    alert("Login successful!");
+    navigate("/home");  // Redirect to home or any other page
   };
 
   return (
@@ -43,14 +57,9 @@ const Login = () => {
       {/* Welcome Section */}
       <div className="welcome-section">
         <h1 className="welcome-text">
-          <span>W</span>
-          <span>E</span>
-          <span>L</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-          <span>E</span>
-          <span>!</span>
+          {"WELCOME!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
         </h1>
         <p>
           Welcome to our Appointment Management System. Please log in to
@@ -71,14 +80,19 @@ const Login = () => {
               onChange={handleChange}
               required
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
+            <div className="password-field">
+              <input
+                type={showPassword ? "text" : "password"} // Toggle password visibility
+                name="password"
+                placeholder="Password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+              />
+              <button type="button" onClick={togglePasswordVisibility}>
+                {showPassword ? "Hide" : "Show"}
+              </button>
+            </div>
             <button type="submit">Login</button>
           </form>
           <div className="links">
@@ -93,27 +107,9 @@ const Login = () => {
       {/* Thank You Message */}
       <div className="thank-you-message">
         <h1 className="thank-you-text">
-          <span>T</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
-          <span>K</span>
-          <span> </span>
-          <span>Y</span>
-          <span>O</span>
-          <span>U</span>
-          <span> </span>
-          <span>F</span>
-          <span>O</span>
-          <span>R</span>
-          <span> </span>
-          <span>L</span>
-          <span>O</span>
-          <span>G</span>
-          <span>G</span>
-          <span>I</span>
-          <span>N</span>
-          <span>!</span>
+          {"THANK YOU FOR LOGIN!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
         </h1>
       </div>
     </>
