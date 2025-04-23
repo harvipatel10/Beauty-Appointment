@@ -50,23 +50,13 @@ const Signup = () => {
 
     {/* Welcome Section */}
     <div className="welcomeback-section">
-        <h1 className="welcomeback-text">
-          <span>W</span>
-          <span>E</span>
-          <span>L</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-          <span>E</span>
-          <span></span>
-          <span>B</span>
-          <span>A</span>
-          <span>C</span>
-          <span>K</span>
-          <span>!</span>
+    <h1 className="welcomeback-text">
+          {"WELCOME BACK!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
         </h1>
-        
-      </div>
+     </div>
+    
 
    
     <div className="main-container1">
@@ -129,27 +119,11 @@ const Signup = () => {
     {/* Thank You Message */}
     <div className="thank-you-message">
         <h1 className="thank-you-text">
-          <span>T</span>
-          <span>H</span>
-          <span>A</span>
-          <span>N</span>
-          <span>K</span>
-          <span> </span>
-          <span>Y</span>
-          <span>O</span>
-          <span>U</span>
-          <span> </span>
-          <span>F</span>
-          <span>O</span>
-          <span>R</span>
-          <span> </span>
-          <span>S</span>
-          <span>I</span>
-          <span>G</span>
-          <span>N</span>
-          <span>U</span>
-          <span>P</span>
-          <span>!</span>
+        <h1 className="welcome-text">
+          {"THANK YOU FOR SIGNUP!".split("").map((char, i) => (
+            <span key={i}>{char}</span>
+          ))}
+        </h1>
         </h1>
       </div>
     </>
