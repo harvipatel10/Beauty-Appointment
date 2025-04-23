@@ -77,19 +77,19 @@ const Login = () => {
               required
             />
             <div className="password-container">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                placeholder="Password"
-                value={formData.password}
-                onChange={handleChange}
-                required
-              />
-              <span className="password-toggle" onClick={togglePassword}>
-                                {showPassword ? '👁️' : '🙈'}
-                            </span>
-           
-            </div>
+  <input
+    type={showPassword ? "text" : "password"}
+    name="password"
+    placeholder="Password"
+    value={formData.password}
+    onChange={handleChange}
+    required
+  />
+  <span className="password-toggle" onClick={togglePassword}>
+    {showPassword ? '👁️' : '🙈'}
+  </span>
+</div>
+
             <button type="submit">Login</button>
           </form>
           <div className="links">
