@@ -96,19 +96,18 @@ const Login = () => {
             <p className="message">
               Don't have an account?{" "}
               <button onClick={() => navigate("/signup")}>Go to Sign Up</button>
-            </p>
+              </p>
           </div>
+        </div>
+      </div>
 
-
-          {/* Thank You Message */}
+      {/* Thank You Message */}
       <div className="thank-you-message">
         <h1 className="thank-you-text">
           {"THANK YOU FOR LOGIN!".split("").map((char, i) => (
             <span key={i}>{char}</span>
           ))}
         </h1>
-      </div>
-        </div>
       </div>
     </>
   );
