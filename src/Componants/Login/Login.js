@@ -4,19 +4,12 @@ import "../Login/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState(false);
 
   // State for form fields
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
-  const togglePassword = () => {
-    setShowPassword(!showPassword);
-};
-
-
 
   // Handle input change
   const handleChange = (e) => {
@@ -25,7 +18,6 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
-
 
   // Handle form submission
   const handleLogin = (event) => {
@@ -76,27 +68,22 @@ const Login = () => {
               onChange={handleChange}
               required
             />
-            <div className="password-container">
-  <input
-    type={showPassword ? "text" : "password"}
-    name="password"
-    placeholder="Password"
-    value={formData.password}
-    onChange={handleChange}
-    required
-  />
-  <span className="password-toggle" onClick={togglePassword}>
-    {showPassword ? '👁️' : '🙈'}
-  </span>
-</div>
-
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
             <button type="submit">Login</button>
           </form>
+
           <div className="links">
             <p className="message">
               Don't have an account?{" "}
               <button onClick={() => navigate("/signup")}>Go to Sign Up</button>
-              </p>
+            </p>
           </div>
         </div>
       </div>
